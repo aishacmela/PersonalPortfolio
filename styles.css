@@ -119,3 +119,26 @@
   
 }
 
+/* Set a fixed height for the card to make them the same size */
+.card {
+  height: 100%; /* Ensures that the card will expand to fill the column */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the card image takes up a specific height and width, fitting within the card */
+.card-img-top {
+  height: 200px; /* Set this to the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%;
+}
+
+/* Adjust card-body to fill the remaining space */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
