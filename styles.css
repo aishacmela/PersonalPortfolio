@@ -1,88 +1,100 @@
-*{
-    margin: o;
+/*
+ * Globals
+ */
+ *{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-:root{
-    --body-color : rgba(250, 250, 250);
-    --color-white : rgba(250, 250, 250);
-    --texr-color-second: rgba(38, 37, 37);
-    --first-color: rgba(110, 87, 224);
-    --first-shadow: rgba(0, 0, 0, 0.1);
-    --box-color: #fff;
-    --nav-color: #fff;
-    --nav-icon: #000;
-    --text-color: #444444;
-    --color-white: #242526;
-    --icon-color: #242526;
-    --mode-color: #ccc;
-}
-body{
-    background-color: var(--body-color);
-}
-/*Dark Mode*/
-body.dark{
-    --body-color: #202425;
-    --box-color: #fff;
-
-    --nav-color: #262425;
-    --color-white: #fff;
-    --text-color: #fff;
-
-    --nav-icon: #fff;
-    --logo-color: #fff;
-    --icon-color: #8749f2;
-    --mode-color: #fff;
-}
-.container{
-    width: 100%;
+  }
+  
+  /* Custom default button */
+  .btn-light,
+  .btn-light:hover,
+  .btn-light:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritance from `body` */
+  }
+  
+  
+  /*
+   * Base structure
+   */
+  
+  
+  
+  .cover-container {
+    max-width: 42em;
+  }
+  
+  
+  /*
+   * Header
+   */
+   .banner-wrap{
+    background-image: url(./assets/ayishah.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
-}s
-
-html{
-    scroll-behavior: smooth;
-}
-
-nav{
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
+    z-index: 1s;
+    
+  }
+  .overlay{
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    background: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .nav-masthead .nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+  }
+  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+  }
+  
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+  .nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  .card-img-star{
+  height: 220px;
+  width: 390.5px;
+  }
+  
+  .scrolling {
+    background: black;
+    opacity: 80%;
+    transition: all 0.5s;
+  }
+  .alert{
     width: 100%;
-    height: 90px;
-    line-height: 100px;
-    background: var(--nav-color);
-    padding-inline: 10px;
-    transition: 0.3s;
-    z-index: 100;
-}
-.nav-logo{
-    position: relative;
-}
-.nav-name{
+    background: var(--bs-highlight-bg);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: var(--logo-color);
-}
-.nav-menu,
-.nav_menu_list{
-    display: flex;
-    column-gap: -30px;
-    list-style: none;
-}
-.nav-menu .nav-list{
-    list-style: none;
-    position: relative;
-}
-.nav-link{
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight:500 ;
-    padding-inline: 15px;
-    margin-inline: 20px;
-}
-.nav-menu-btn{
     display: none;
-
-}
+  }
+  
+  #contacts{
+    color: black;
+  }
+  #contacts label{
+    text-align: start;
+  }
+  
+  #blueSection{
+    color: #fff;
+  }
