@@ -98,3 +98,24 @@
   #blueSection{
     color: #fff;
   }
+
+  /* Ensures that labels are positioned directly above each input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+.btn-primary{
+  background-color: blue ;
+  border: none;
+  width: 60%;
+  display: block;
+  margin: auto;
+  
+}
+
