@@ -174,7 +174,7 @@
 
   <main class="d-flex flex-column align-items-center justify-content-center vh-100 vw-100 text-center">
     <h1 class="">I am Ayishah Seimela</h1>
-    <p class="lead">Mobile and Web App Developer.</p>
+    <p class="lead input">Mobile and Web App Developer.</p>
     <p class="lead">
       <a href="#" class="btn">Learn more</a>
     </p>
@@ -428,8 +428,15 @@
 
 
 <script src="mail.js"></script>
-
+<!-- typed js for typing text effect -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+      var typed = new Typed(".input", {
+        strings:["Software Developer", "Web Developer", "Mobile Developer"],
+        typedSpeed:100,
+        backSpeed:70,
+        loop: true
+      })
    window.addEventListener("scroll", () => {
           const header = document.querySelector("header")
           header.classList.toggle("scrolling", window.scrollY > 0)
