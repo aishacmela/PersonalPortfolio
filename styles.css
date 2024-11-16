@@ -26,19 +26,38 @@
     max-width: 42em;
   }
   
+  /* Background */
+  .banner-wrap {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 90vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
   
   /*
    * Header
    */
-   .banner-wrap{
+   /*.banner-wrap{
     background-image: url(./assets/ayishah.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     z-index: 1s;
-    
-  }
+  }*/
   .overlay{
     z-index: -1;
     height: 100%;
@@ -53,7 +72,9 @@
     color: rgba(255, 255, 255, .5);
     border-bottom: .25rem solid transparent;
   }
-  
+h1{
+  text-align: center;
+}
   .nav-masthead .nav-link:hover,
   .nav-masthead .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, .25);
