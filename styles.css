@@ -15,8 +15,31 @@
     text-shadow: none; /* Prevent inheritance from `body` */
   }
   
+  h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .lead p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .home-social-icons{
+    font-size: 24px;
+  }
+.home-social-icons i{
+  margin-left: 10px;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  border-radius: 50%;
+  padding: 10px;
+}
 
-  
+.home-social-icons i:hover{
+  background-color: white;
+  border: none;
+}
   .cover-container {
     max-width: 42em;
   }
@@ -102,6 +125,11 @@ h1{
   border-radius: 15px;
   width: 150px;
 }
+.btn:hover{
+  border: 1px solid blueviolet;
+  color: blueviolet;
+  background-color: #fff;
+}
 .card-body-link i{
   font-size: 35px;
   padding: 5px;
@@ -133,6 +161,9 @@ h1{
   margin: 8px;
   padding: 10px;
   box-shadow: rgba(7px, 7px, 5px, .5);
+}
+.form-group ::placeholder{
+  color:#1B2EA8 ;
 }
 .form-group #name, #lastname{
   background-color: #E8E9FF;
@@ -169,6 +200,30 @@ h1{
   display: block;
   margin: auto;
   
+}
+
+.contact-wrap {
+  background-color: #f8f8f8; /* Add the background color */
+  padding: 40px; /* Add padding for better spacing */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for elevation */
+  max-width: 800px; /* Limit the width for a clean look */
+  display: block !important;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 800px;
+}
+
+.ftco-section {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #ffffff; /* Optional: Set a background for the section */
+  padding: 20px; /* Avoid content touching the edges */
+}
+
+.wrapper .contact-wrap{
+  display: block;
+  margin: 40px auto;
 }
 
 /* Set a fixed height for the card to make them the same size */
