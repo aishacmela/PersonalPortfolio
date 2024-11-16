@@ -309,8 +309,8 @@
       <div class="col-md-4 mt-3">
         <div class="card">
           <img
-            src="assets/reactweatherapp.png"
-            class="card-img-top"
+            src="assets/wineproject.png"
+            class="card-img-top img-fluid"
             alt="..."
           />
           <div class="card-body">
@@ -350,36 +350,38 @@
               <div class="col-md-12">
                 <div class="wrapper">
                   <div class="row no-gutters">
-                    <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+                    <div class="col-lg-8 col-md-7 order-md-last d-flex ">
                       <div class="contact-wrap w-100 p-md-5 p-4">
                         <h3 class="mb-4">Get in touch</h3>
-                        <div id="form-message-warning" class="mb-4"></div> 
-                        <div id="form-message-success" class="mb-4">
-                          Your message was sent, thank you!
-                        </div>
                         <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group form-group-label">
-                                <label class="label p-1" for="name">Full Name</label>
                                 <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group form-group-label">
+                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
                               </div>
                             </div>
                             <div class="col-md-6"> 
                               <div class="form-group form-group-label">
-                                <label class="label p-1" for="email">Email Address</label>
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="col-md-6"> 
+                              <div class="form-group form-group-label">
+                                <input type="email" class="form-control" name="phone-number" id="phone-number" placeholder="Phone Number">
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="form-group form-group-label">
-                                <label class="label p-1" for="subject">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="form-group form-group-label">
-                                <label class="label p-1" for="#">Message</label>
                                 <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
                               </div>
                             </div>
@@ -393,44 +395,6 @@
                         </form>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 d-flex align-items-stretch text" >
-                      <div class="info-wrap bg-primary w-100" id="blueSection">
-                        <h3>Let's get in touch</h3>
-                        <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-                        <div class="dbox w-100 d-flex align-items-start">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-map-marker"></span>
-                          </div>
-                          <div class="text">
-                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-phone"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p><span>Phone:</span> <a href="tel:+27 633170981">+27 633 170 981</a></p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-paper-plane"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p><span>Email:<a href="mail:aishacmela@gmail.com">aishacmela@gmail.com</a></p>
-                          </div>
-                        </div>
-                        <div class="dbox w-100 d-flex align-items-center">
-                          <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="fa fa-globe"></span>
-                          </div>
-                          <div class="text pl-3">
-                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -438,7 +402,7 @@
           </div>
         </section>
         <section id="footer">
-          <h1>Ayisha Seimela</h1>
+          <h2>Ayisha Seimela</h2>
           <ul class="footer-list">
             <li>Home</li>
             <li>About Me</li>
@@ -446,7 +410,7 @@
             <li>Contacts</li>
           </ul>
 
-          <h2>Stay Connected</h2>
+          <h3>Let's Connect</h3>
           <div class="social-icons">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
             <i class="fa fa-pinterest" aria-hidden="true"></i>
