@@ -15,12 +15,7 @@
     text-shadow: none; /* Prevent inheritance from `body` */
   }
   
-  
-  /*
-   * Base structure
-   */
-  
-  
+
   
   .cover-container {
     max-width: 42em;
@@ -75,6 +70,7 @@
 h1{
   text-align: center;
 }
+
   .nav-masthead .nav-link:hover,
   .nav-masthead .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, .25);
@@ -92,7 +88,26 @@ h1{
   height: 220px;
   width: 390.5px;
   }
-  
+
+  .card-body-link{
+    display: flex;
+    justify-content: space-around;
+  }
+.btn {
+  background-color: blueviolet;
+  color: #fff;
+  padding: 15px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+}
+.card-body-link i{
+  font-size: 35px;
+  padding: 5px;
+  color: blueviolet;
+}
+
   .scrolling {
     background: black;
     opacity: 80%;
@@ -117,7 +132,9 @@ h1{
   }
   
   #blueSection{
-    color: #fff;
+    background: rgb(216,171,245);
+    background: linear-gradient(90deg, rgba(216,171,245,0.49763655462184875) 0%, rgba(98,193,250,1) 80%);
+    padding: 80px 50px;
   }
 
   /* Ensures that labels are positioned directly above each input */
