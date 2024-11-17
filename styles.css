@@ -116,6 +116,16 @@ h1{
     display: flex;
     justify-content: space-around;
   }
+  .card .badge{
+    padding: 10px 14px;
+    margin: 2px;
+    font-size: 18px;
+  }
+
+.aboutcontact p{
+  font-size: 18px;
+}
+
 .btn {
   background-color: blueviolet;
   color: #fff;
@@ -181,6 +191,16 @@ h1{
 .form-group {
   display: flex;
   flex-direction: column;
+}
+.form-group .btn{
+  display: block;
+  margin: 0px 10px 20px 10px;
+}
+.contact-wrap h3{
+  text-align: start;
+  Margin: 0px 10px 20px 10px;
+  color: #1B2EA8;
+  font-weight: 300;
 }
 
 .form-group input .btn{
@@ -262,8 +282,10 @@ h1{
 }
 .footer-list li{
   margin-left: 15px;
-  margin-right: 10px;
-  
+  margin-right: 15px;
+}
+.footer-list a{
+  text-decoration: none;
 }
 .social-icons{
   margin-top: 20px;
